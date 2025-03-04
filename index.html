@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your one-stop destination for free online tools. Compress images, edit PDFs, and more!">
+    <meta name="keywords" content="image tools, PDF tools, free online tools, compress images, edit PDFs">
+    <meta name="author" content="Your Company Name">
+    <title>Home - Free Online Tools</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #007BFF, #00BFFF);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00BFFF;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px;
+        }
+
+        .hero .btn {
+            background: #007BFF;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .hero .btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Tool Categories */
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            background: white;
+        }
+
+        .category-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-card i {
+            font-size: 2rem;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .category-card h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .category-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Featured Tools */
+        .featured-tools {
+            padding: 40px 20px;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .featured-tools h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .tool-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .tool-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool-card i {
+            font-size: 2rem;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .tool-card h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .tool-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .categories, .tool-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .category-card, .tool-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Free Online Tools</h1>
+        <p>Your one-stop destination for image and PDF tools</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#image-tools">Image Tools</a>
+        <a href="#pdf-tools">PDF Tools</a>
+        <a href="#featured-tools">Featured Tools</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Simplify Your Work with Our Free Tools</h2>
+        <p>Compress images, edit PDFs, and more – all in one place!</p>
+        <a href="#categories" class="btn">Explore Tools</a>
+    </section>
+
+    <!-- Tool Categories -->
+    <section class="categories" id="categories">
+        <a href="/Tool/img-compress" class="category-link">
+    <div class="category-card">
+        <i class="fas fa-image"></i>
+        <h3>Image Tools</h3>
+        <p>Compress, resize, and convert images effortlessly.</p>
+    </div>
+</a>
+
+        <div class="category-card">
+            <i class="fas fa-file-pdf"></i>
+            <h3>PDF Tools</h3>
+            <p>Merge, split, and edit PDFs with ease.</p>
+        </div>
+    </section>
+
+    <!-- Featured Tools -->
+    <section class="featured-tools" id="featured-tools">
+        <h2>Featured Tools</h2>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <i class="fas fa-compress"></i>
+                <h3>Image Compressor</h3>
+                <p>Reduce image size without losing quality.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-file-export"></i>
+                <h3>PDF Merger</h3>
+                <p>Combine multiple PDFs into one.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-crop"></i>
+                <h3>Image Resizer</h3>
+                <p>Resize images to your desired dimensions.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-file-signature"></i>
+                <h3>PDF Editor</h3>
+                <p>Edit and annotate PDFs online.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Free Online Tools. All rights reserved.</p>
+    </footer>
+</body>
+</html>
